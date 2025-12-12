@@ -1,0 +1,26 @@
+/* Social Links in Footer */
+.social-links {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.social-link {
+    color: var(--text-secondary);
+    transition: color var(--transition-speed);
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.social-link:hover {
+    color: var(--accent-gold);
+}
+
+.social-icon {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}

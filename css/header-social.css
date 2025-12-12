@@ -1,0 +1,25 @@
+/* Header Social Icons */
+.nav-extras {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.header-social {
+    display: flex;
+    gap: 1rem;
+}
+
+.tiktok-icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-color: var(--accent-gold);
+    -webkit-mask: url('../assets/tiktok.png') no-repeat center / contain;
+    mask: url('../assets/tiktok.png') no-repeat center / contain;
+    transition: background-color 0.3s;
+}
+
+.tiktok-icon:hover {
+    background-color: var(--text-primary);
+}

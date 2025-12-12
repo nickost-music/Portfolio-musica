@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NickOST - Pianist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Outfit:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">NickOST</div>
+        <div class="nav-links">
+            <a href="index.html" data-i18n="nav_home">Inicio</a>
+            <a href="index.html#about" data-i18n="nav_about">Sobre Mí</a>
+            <a href="composer.html" data-i18n="nav_composer">Compositor</a>
+            <a href="pianist.html" data-i18n="nav_pianist" class="active"
+                style="color: var(--accent-gold);">Pianista</a>
+            <a href="index.html#contact" data-i18n="nav_contact">Contacto</a>
+        </div>
+        <div class="nav-extras">
+            <div class="header-social">
+                <a href="https://www.tiktok.com/@nickost_music" target="_blank" title="TikTok: @nickost_music">
+                    <span class="tiktok-icon"></span>
+                </a>
+                <a href="https://www.tiktok.com/@secretosonoros" target="_blank" title="TikTok: @secretosonoros">
+                    <span class="tiktok-icon"></span>
+                </a>
+            </div>
+            <div class="lang-toggle" id="lang-toggle-btn">EN</div>
+        </div>
+    </nav>
+
+    <header class="hero" style="height: 60vh; background-image: url('assets/profile3.jpg');">
+        <div class="hero-content reveal">
+            <h1 data-i18n="pianist_title">Pianista</h1>
+            <p data-i18n="hero_subtitle">Creando emociones a través del sonido</p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container text-center reveal">
+            <h2 data-i18n="pianist_services_title" style="margin-bottom: 2rem;">Servicios de Piano en Vivo</h2>
+            <div class="services-text-wrapper"
+                style="max-width: 800px; margin: 0 auto; line-height: 1.8; font-size: 1.1rem; color: var(--text-primary);">
+                <p data-i18n="pianist_services_text">
+                    La música en vivo tiene el poder de transformar cualquier evento en una memoria imborrable.
+                    Desde la solemne elegancia de una ceremonia de boda hasta el ambiente sofisticado de una gala
+                    corporativa o cóctel,
+                    mi repertorio se adapta para crear la atmósfera perfecta.
+                    Ofrezco interpretaciones que van desde lo clásico y emotivo hasta arreglos modernos, siempre con la
+                    sensibilidad y el refinamiento que tu ocasión merece.
+                </p>
+                <div style="margin-top: 3rem; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                    <span
+                        style="display:inline-block; padding: 0.5rem 1rem; border: 1px solid var(--accent-gold); color: var(--accent-gold); font-family: var(--font-heading);"
+                        data-i18n="service_weddings">•
+                        Bodas & Ceremonias •</span>
+                    <span
+                        style="display:inline-block; padding: 0.5rem 1rem; border: 1px solid var(--accent-gold); color: var(--accent-gold); font-family: var(--font-heading);"
+                        data-i18n="service_corporate">•
+                        Eventos Corporativos •</span>
+                    <span
+                        style="display:inline-block; padding: 0.5rem 1rem; border: 1px solid var(--accent-gold); color: var(--accent-gold); font-family: var(--font-heading);"
+                        data-i18n="service_gala">•
+                        Cenas de Gala •</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pianist" class="section">
+        <div class="container">
+            <h2 class="text-center reveal" data-i18n="pianist_title">Pianista</h2>
+            <div class="gallery-grid reveal">
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/-lK5cnu3Wx4" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-link text-center" style="padding: 0.5rem;">
+                        <a href="https://www.youtube.com/shorts/-lK5cnu3Wx4" target="_blank"
+                            style="font-size: 0.8rem; color: var(--text-secondary);">
+                            <span data-i18n="watch_on_youtube">Ver en YouTube</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/X9Ik8PNdbjQ" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-link text-center" style="padding: 0.5rem;">
+                        <a href="https://www.youtube.com/shorts/X9Ik8PNdbjQ" target="_blank"
+                            style="font-size: 0.8rem; color: var(--text-secondary);">
+                            <span data-i18n="watch_on_youtube">Ver en YouTube</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/_nv0fn8Wxcc" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-link text-center" style="padding: 0.5rem;">
+                        <a href="https://www.youtube.com/shorts/_nv0fn8Wxcc" target="_blank"
+                            style="font-size: 0.8rem; color: var(--text-secondary);">
+                            <span data-i18n="watch_on_youtube">Ver en YouTube</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.tiktok.com/@nickost_music" target="_blank" class="social-link">TikTok:
+                @nickost_music</a>
+            <a href="https://www.tiktok.com/@secretosonoros" target="_blank" class="social-link">TikTok:
+                @secretosonoros</a>
+            <a href="http://www.fiverr.com/s/GzZyve7" target="_blank" class="social-link" style="color: #1DBF73;">Fiverr
+                Profile</a>
+        </div>
+        <p>&copy; 2025 NickOST. <span data-i18n="footer_rights">Todos los derechos reservados.</span></p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

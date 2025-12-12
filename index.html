@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NickOST - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Outfit:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">NickOST</div>
+        <div class="nav-links">
+            <a href="index.html" data-i18n="nav_home" class="active" style="color: var(--accent-gold);">Inicio</a>
+            <a href="#about" data-i18n="nav_about">Sobre Mí</a>
+            <a href="composer.html" data-i18n="nav_composer">Compositor</a>
+            <a href="pianist.html" data-i18n="nav_pianist">Pianista</a>
+            <a href="#contact" data-i18n="nav_contact">Contacto</a>
+        </div>
+        <div class="nav-extras">
+            <div class="header-social">
+                <a href="https://www.tiktok.com/@nickost_music" target="_blank" title="TikTok: @nickost_music">
+                    <span class="tiktok-icon"></span>
+                </a>
+                <a href="https://www.tiktok.com/@secretosonoros" target="_blank" title="TikTok: @secretosonoros">
+                    <span class="tiktok-icon"></span>
+                </a>
+            </div>
+            <div class="lang-toggle" id="lang-toggle-btn">EN</div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content reveal">
+            <h1 data-i18n="hero_title">Compositor & Pianista</h1>
+            <p data-i18n="hero_subtitle">Creando emociones a través del sonido</p>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container about-grid reveal">
+            <div class="about-img">
+                <img src="assets/profile1.jpg" alt="NickOST Portrait">
+            </div>
+            <div class="about-text">
+                <h2 data-i18n="about_title">Sobre Mí</h2>
+                <p data-i18n="about_text">
+                    Soy un ingeniero de Sonido e Imagen de la universidad de Málaga. Me apasiona el sonido y la
+                    música...
+                </p>
+                <div style="margin-top: 2rem; display: flex; gap: 1rem;">
+                    <a href="composer.html" class="contact-btn"
+                        style="background: transparent; border: 1px solid var(--accent-gold); color: var(--accent-gold);">
+                        Ver Portfolio Compositor
+                    </a>
+                    <a href="pianist.html" class="contact-btn"
+                        style="background: transparent; border: 1px solid var(--accent-gold); color: var(--accent-gold);">
+                        Ver Portfolio Pianista
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="section">
+        <div class="container">
+            <h2 class="text-center reveal" data-i18n="testimonials_title">Lo que dicen mis clientes</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal">
+                    <p class="testimonial-text" data-i18n="testim_1">"Trabajar con él fue un placer absoluto. Entregó
+                        exactamente lo que necesitaba para mi cortometraje con una calidad de sonido increíble."</p>
+                    <div class="testimonial-author">- Fiverr Client (Filmmaker)</div>
+                </div>
+                <div class="testimonial-card reveal">
+                    <p class="testimonial-text" data-i18n="testim_2">"Un pianista increíble. Hizo que nuestra ceremonia
+                        fuera inolvidable. Muy profesional y talentoso."</p>
+                    <div class="testimonial-author">- Event Organizer</div>
+                </div>
+                <div class="testimonial-card reveal">
+                    <p class="testimonial-text" data-i18n="testim_3">"Comunicación de 5 estrellas y un resultado final
+                        que superó mis expectativas. Volveré a contratarlo."</p>
+                    <div class="testimonial-author">- Video Game Developer</div>
+                </div>
+            </div>
+
+            <div class="text-center reveal" style="margin-top: 3rem;">
+                <a href="http://www.fiverr.com/s/GzZyve7" target="_blank" class="contact-btn" data-i18n="fiverr_btn"
+                    style="background-color: #1DBF73; border-color: #1DBF73; color: white;">Contrátame en Fiverr</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+        <div class="container reveal">
+            <h2 data-i18n="contact_title">Contacto</h2>
+            <p data-i18n="contact_text" style="max-width: 600px; margin: 0 auto 2rem auto;">
+                ¿Necesitas música original para tu proyecto o un pianista para tu evento? ¡Hablemos!
+            </p>
+
+            <form class="contact-form" action="mailto:contact@nickost.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Nombre / Name" required class="form-input">
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Email" required class="form-input">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="subject" placeholder="Asunto / Subject" required class="form-input">
+                </div>
+                <div class="form-group">
+                    <textarea name="message" rows="5" placeholder="Mensaje / Message" required
+                        class="form-input"></textarea>
+                </div>
+                <button type="submit" class="contact-btn" data-i18n="contact_btn">Contáctame</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.tiktok.com/@nickost_music" target="_blank" class="social-link">TikTok:
+                @nickost_music</a>
+            <a href="https://www.tiktok.com/@secretosonoros" target="_blank" class="social-link">TikTok:
+                @secretosonoros</a>
+            <a href="http://www.fiverr.com/s/GzZyve7" target="_blank" class="social-link" style="color: #1DBF73;">Fiverr
+                Profile</a>
+        </div>
+        <p>&copy; 2025 NickOST. <span data-i18n="footer_rights">Todos los derechos reservados.</span></p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

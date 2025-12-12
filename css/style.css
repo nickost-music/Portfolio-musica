@@ -1,0 +1,323 @@
+@import url('audio.css');
+@import url('form.css');
+@import url('social.css');
+@import url('header-social.css');
+
+:root {
+    --bg-color: #0d0d0d;
+    --card-bg: #1a1a1a;
+    --text-primary: #f0f0f0;
+    --text-secondary: #a0a0a0;
+    --accent-gold: #d4af37;
+    --accent-hover: #f9c945;
+    --font-heading: 'Cinzel', serif;
+    --font-body: 'Outfit', sans-serif;
+    --transition-speed: 0.3s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    color: var(--accent-gold);
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color var(--transition-speed);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+/* Utilities */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.section {
+    padding: 4rem 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    background-color: rgba(13, 13, 13, 0.95);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent-gold);
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a:hover {
+    color: var(--accent-gold);
+}
+
+.lang-toggle {
+    cursor: pointer;
+    font-weight: 600;
+    border: 1px solid var(--accent-gold);
+    padding: 0.4rem 1rem;
+    border-radius: 4px;
+    color: var(--accent-gold);
+    transition: all var(--transition-speed);
+}
+
+.lang-toggle:hover {
+    background-color: var(--accent-gold);
+    color: var(--bg-color);
+}
+
+/* Hero */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/profile2.jpg') center/cover no-repeat;
+    margin-top: -80px;
+    /* Offset navbar */
+    padding-top: 80px;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* About */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.about-img img {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    transition: transform 0.5s ease;
+}
+
+.about-img img:hover {
+    transform: scale(1.02);
+}
+
+/* Composer & Pianist Sections */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.video-card {
+    background: var(--card-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform var(--transition-speed);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-gold);
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    height: 0;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.card-info {
+    padding: 1rem;
+}
+
+.card-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+    font-family: var(--font-body);
+}
+
+/* Testimonials */
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.testimonial-card {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid rgba(212, 175, 55, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+.testimonial-card::before {
+    content: '“';
+    font-family: var(--font-heading);
+    font-size: 4rem;
+    color: var(--accent-gold);
+    opacity: 0.2;
+    position: absolute;
+    top: -10px;
+    left: 20px;
+}
+
+.testimonial-text {
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+}
+
+.testimonial-author {
+    color: var(--accent-gold);
+    font-weight: 600;
+    font-family: var(--font-heading);
+}
+
+/* Animations */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Contact */
+.contact-section {
+    background-color: var(--card-bg);
+    text-align: center;
+}
+
+.contact-btn {
+    display: inline-block;
+    background-color: var(--accent-gold);
+    color: var(--bg-color);
+    padding: 1rem 2rem;
+    font-weight: 700;
+    border-radius: 4px;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-btn:hover {
+    background-color: var(--accent-hover);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-img {
+        order: -1;
+    }
+}

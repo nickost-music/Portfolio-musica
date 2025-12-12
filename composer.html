@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NickOST - Composer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Outfit:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">NickOST</div>
+        <div class="nav-links">
+            <a href="index.html" data-i18n="nav_home">Inicio</a>
+            <a href="index.html#about" data-i18n="nav_about">Sobre Mí</a>
+            <a href="composer.html" data-i18n="nav_composer" class="active"
+                style="color: var(--accent-gold);">Compositor</a>
+            <a href="pianist.html" data-i18n="nav_pianist">Pianista</a>
+            <a href="index.html#contact" data-i18n="nav_contact">Contacto</a>
+        </div>
+        <div class="nav-extras">
+            <div class="header-social">
+                <a href="https://www.tiktok.com/@nickost_music" target="_blank" title="TikTok: @nickost_music">
+                    <span class="tiktok-icon"></span>
+                </a>
+                <a href="https://www.tiktok.com/@secretosonoros" target="_blank" title="TikTok: @secretosonoros">
+                    <span class="tiktok-icon"></span>
+                </a>
+            </div>
+            <div class="lang-toggle" id="lang-toggle-btn">EN</div>
+        </div>
+    </nav>
+
+    <header class="hero" style="height: 60vh;">
+        <div class="hero-content reveal">
+            <h1 data-i18n="composer_title">Compositor de Bandas Sonoras</h1>
+            <p data-i18n="hero_subtitle">Creando emociones a través del sonido</p>
+        </div>
+    </header>
+
+    <!-- Video Section -->
+    <section id="composer" class="section">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 2rem;">
+                <a href="https://www.youtube.com/@NickOST_music" target="_blank"
+                    style="color: var(--accent-gold); border-bottom: 1px solid;">
+                    Visit My YouTube Channel
+                </a>
+            </div>
+            <div class="gallery-grid reveal">
+                <!-- Most Important -->
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/EmGHj9QCuds" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-link text-center" style="margin-top: 0.5rem;">
+                        <a href="https://www.youtube.com/watch?v=EmGHj9QCuds" target="_blank"
+                            style="font-size: 0.9rem; color: var(--accent-gold);">
+                            <span data-i18n="watch_on_youtube">Ver en YouTube</span>
+                        </a>
+                    </div>
+                    <div class="card-info">
+                        <h3>Featured Composition (100k+ Views)</h3>
+                    </div>
+                </div>
+                <!-- Other Videos -->
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/WYymZTsCDEs" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-link text-center" style="padding: 0.5rem;">
+                        <a href="https://www.youtube.com/watch?v=WYymZTsCDEs" target="_blank"
+                            style="font-size: 0.8rem; color: var(--text-secondary);">
+                            <span data-i18n="watch_on_youtube">Ver en YouTube</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/XhpFtxox9cs" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-link text-center" style="padding: 0.5rem;">
+                        <a href="https://www.youtube.com/watch?v=XhpFtxox9cs" target="_blank"
+                            style="font-size: 0.8rem; color: var(--text-secondary);">
+                            <span data-i18n="watch_on_youtube">Ver en YouTube</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audio Player Section -->
+    <section id="audio-player" class="section audio-section">
+        <div class="container">
+            <h2 class="text-center reveal" style="margin-bottom: 3rem;">Original Compositions (Audio)</h2>
+            <div class="audio-player-container reveal">
+                <ul class="track-list">
+                    <li class="track-item" data-src="assets/audio/Asian Girl.mp3">
+                        <button class="play-btn">▶</button>
+                        <div class="track-info">
+                            <span class="track-title">Asian Girl</span>
+                            <span class="track-meta">Original Composition</span>
+                        </div>
+                    </li>
+                    <li class="track-item" data-src="assets/audio/Desolation.mp3">
+                        <button class="play-btn">▶</button>
+                        <div class="track-info">
+                            <span class="track-title">Desolation</span>
+                            <span class="track-meta">Original Composition</span>
+                        </div>
+                    </li>
+                    <li class="track-item" data-src="assets/audio/Entity Anthem.mp3">
+                        <button class="play-btn">▶</button>
+                        <div class="track-info">
+                            <span class="track-title">Entity Anthem</span>
+                            <span class="track-meta">Soundtrack</span>
+                        </div>
+                    </li>
+                    <li class="track-item" data-src="assets/audio/Epic Inception.mp3">
+                        <button class="play-btn">▶</button>
+                        <div class="track-info">
+                            <span class="track-title">Epic Inception</span>
+                            <span class="track-meta">Cinematic</span>
+                        </div>
+                    </li>
+                    <li class="track-item" data-src="assets/audio/Espacial Game.mp3">
+                        <button class="play-btn">▶</button>
+                        <div class="track-info">
+                            <span class="track-title">Espacial Game</span>
+                            <span class="track-meta">Game Audio</span>
+                        </div>
+                    </li>
+                    <li class="track-item" data-src="assets/audio/Hip Hop Bass.mp3">
+                        <button class="play-btn">▶</button>
+                        <div class="track-info">
+                            <span class="track-title">Hip Hop Bass</span>
+                            <span class="track-meta">Urban / Beat</span>
+                        </div>
+                    </li>
+                    <li class="track-item" data-src="assets/audio/Iceland.mp3">
+                        <button class="play-btn">▶</button>
+                        <div class="track-info">
+                            <span class="track-title">Iceland</span>
+                            <span class="track-meta">Atmospheric</span>
+                        </div>
+                    </li>
+                    <li class="track-item" data-src="assets/audio/Knight of Destiny.mp3">
+                        <button class="play-btn">▶</button>
+                        <div class="track-info">
+                            <span class="track-title">Knight of Destiny</span>
+                            <span class="track-meta">Orchestral</span>
+                        </div>
+                    </li>
+                    <li class="track-item" data-src="assets/audio/Memories.mp3">
+                        <button class="play-btn">▶</button>
+                        <div class="track-info">
+                            <span class="track-title">Memories</span>
+                            <span class="track-meta">Piano / Emotional</span>
+                        </div>
+                    </li>
+                    <li class="track-item" data-src="assets/audio/Once Upon a Time in the Stars.mp3">
+                        <button class="play-btn">▶</button>
+                        <div class="track-info">
+                            <span class="track-title">Once Upon a Time in the Stars</span>
+                            <span class="track-meta">Fantasy</span>
+                        </div>
+                    </li>
+                    <li class="track-item" data-src="assets/audio/Post-apocalipse Game Music Final.mp3">
+                        <button class="play-btn">▶</button>
+                        <div class="track-info">
+                            <span class="track-title">Post-apocalipse Game Music</span>
+                            <span class="track-meta">Game Audio</span>
+                        </div>
+                    </li>
+                    <li class="track-item" data-src="assets/audio/Rainy Day Mast (Remake).mp3">
+                        <button class="play-btn">▶</button>
+                        <div class="track-info">
+                            <span class="track-title">Rainy Day Mast (Remake)</span>
+                            <span class="track-meta">Lo-Fi / Chill</span>
+                        </div>
+                    </li>
+                    <li class="track-item" data-src="assets/audio/Sobrevida Promo Music Final Version.mp3">
+                        <button class="play-btn">▶</button>
+                        <div class="track-info">
+                            <span class="track-title">Sobrevida Promo Music</span>
+                            <span class="track-meta">Commercial / Promo</span>
+                        </div>
+                    </li>
+                    <li class="track-item" data-src="assets/audio/The Last Farewell.mp3">
+                        <button class="play-btn">▶</button>
+                        <div class="track-info">
+                            <span class="track-title">The Last Farewell</span>
+                            <span class="track-meta">Sad / Emotional</span>
+                        </div>
+                    </li>
+                    <li class="track-item" data-src="assets/audio/The Clown.mp3">
+                        <button class="play-btn">▶</button>
+                        <div class="track-info">
+                            <span class="track-title">The Clown</span>
+                            <span class="track-meta">Horror / Circus</span>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- Master Player Interface -->
+                <div class="master-player hidden-player">
+                    <div class="master-track-info" id="master-track-title">Select a track...</div>
+                    <div class="player-controls">
+                        <button id="master-play-btn" class="play-btn"
+                            style="width: 35px; height: 35px; font-size: 0.9rem;">▶</button>
+                        <span id="current-time">0:00</span>
+                        <input type="range" id="seek-bar" value="0" max="100">
+                        <span id="duration">0:00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.tiktok.com/@nickost_music" target="_blank" class="social-link">TikTok:
+                @nickost_music</a>
+            <a href="https://www.tiktok.com/@secretosonoros" target="_blank" class="social-link">TikTok:
+                @secretosonoros</a>
+            <a href="http://www.fiverr.com/s/GzZyve7" target="_blank" class="social-link" style="color: #1DBF73;">Fiverr
+                Profile</a>
+        </div>
+        <p>&copy; 2025 NickOST. <span data-i18n="footer_rights">Todos los derechos reservados.</span></p>
+    </footer>
+
+    <script src="js/audio-player.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
