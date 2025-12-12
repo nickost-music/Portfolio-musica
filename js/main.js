@@ -111,4 +111,9 @@ document.addEventListener('DOMContentLoaded', () => {
             initAudioPlayer();
         }
     }
+
+    // Init Mobile Menu
+    if (typeof initMobileMenu === 'function') {
+        initMobileMenu();
+    }
 });

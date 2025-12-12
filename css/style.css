@@ -2,6 +2,7 @@
 @import url('form.css');
 @import url('social.css');
 @import url('header-social.css');
+@import url('responsive.css');
 
 :root {
     --bg-color: #0d0d0d;
