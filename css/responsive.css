@@ -35,12 +35,15 @@
     }
 
     /* Hamburger visible on mobile */
+    /* Hamburger visible on mobile - FIXED to ensure close works */
     .hamburger {
         display: flex;
-        position: absolute;
-        /* or fixed/relative depending on design */
+        position: fixed;
+        /* Fix: changed from absolute to fixed */
         right: 5%;
         top: 1.5rem;
+        z-index: 2000;
+        /* Fix: Higher than nav-links (1000) */
     }
 
     /* Active Hamburger Animation */
@@ -70,7 +73,9 @@
         gap: 2rem;
         transform: translateX(100%);
         transition: transform 0.4s ease-in-out;
-        z-index: 1000;
+        z-index: 1500;
+        /* Increased to cover page content */
+        padding-top: 60px;
     }
 
     .nav-links.active {
@@ -83,45 +88,24 @@
     }
 
     /* Adjust Header Social & Lang Toggle for Mobile Menu */
-    /* We might want to move these INTO the mobile menu or keep them visible? 
-       Let's put them inside the menu for cleaner look, or just below logo? 
-       Actually, usually better to hide them and show inside the menu. 
-       But structurally they are separate divs. 
-       We can pull .nav-extras into the mobile menu visually or position it.
-    */
-
     .nav-extras {
         display: none;
-        /* Hide default header extras on mobile to avoid crowding */
     }
 
-    /* We need to re-display them INSIDE the mobile menu or create a mobile-only copy.
-       Alternatively, let's just create a mobile-specific container in CSS for them 
-       if we can re-purpose the existing elements absolutely. 
-       Let's try to position .nav-extras at the bottom of the mobile menu if possible, 
-       but since they are siblings to .nav-links, we can't easily put them "inside" without JS moving them 
-       or CSS Grid hacks.
-       
-       Simpler approach: Make .nav-extras visible in the mobile menu overlay by fixed positioning 
-       when menu is active, OR just keep them in the header if space permits (but usually it doesn't).
-       
-       Let's try styling .nav-extras to appear at bottom of screen when .nav-links.active is true.
-       OR, just keep it simple: Hide icons to save space? No, user wants them.
-       
-       Let's make .nav-extras part of the fixed overlay flow.
-    */
     .navbar.active .nav-extras {
         display: flex;
         flex-direction: column;
         position: fixed;
-        bottom: 10%;
+        bottom: 15%;
+        /* Fix: Moved higher to avoid overlap if bottom bar exists */
         left: 0;
         width: 100%;
         justify-content: center;
         align-items: center;
-        z-index: 1002;
+        gap: 1.5rem;
+        /* Add spacing */
+        z-index: 1502;
         animation: fadeIn 0.5s 0.3s forwards;
-        /* Delay to appear after menu slides */
         opacity: 0;
     }
 
