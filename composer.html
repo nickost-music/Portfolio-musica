@@ -36,8 +36,11 @@
                 <a href="https://www.tiktok.com/@nickost_music" target="_blank" title="TikTok: @nickost_music">
                     <span class="tiktok-icon"></span>
                 </a>
-                <a href="https://www.tiktok.com/@secretosonoros" target="_blank" title="TikTok: @secretosonoros">
-                    <span class="tiktok-icon"></span>
+                <a href="https://soundcloud.com/nickost_music" target="_blank" title="SoundCloud">
+                    <span class="soundcloud-icon"></span>
+                </a>
+                <a href="https://www.youtube.com/@NickOST_music" target="_blank" title="YouTube">
+                    <span class="youtube-icon"></span>
                 </a>
             </div>
             <div class="lang-toggle" id="lang-toggle-btn">EN</div>
@@ -116,7 +119,8 @@
     <section id="audio-player" class="section audio-section">
         <div class="container">
             <h2 class="text-center reveal" style="margin-bottom: 3rem;">Original Compositions (Audio)</h2>
-            <div class="audio-player-container reveal">
+            <!-- Track List Container -->
+            <div class="track-list-container reveal">
                 <ul class="track-list">
                     <li class="track-item" data-src="assets/audio/Asian Girl.mp3">
                         <button class="play-btn">▶</button>
@@ -224,17 +228,24 @@
                         </div>
                     </li>
                 </ul>
+            </div>
 
-                <!-- Master Player Interface -->
-                <div class="master-player hidden-player">
-                    <div class="master-track-info" id="master-track-title">Select a track...</div>
-                    <div class="player-controls">
-                        <button id="master-play-btn" class="play-btn"
-                            style="width: 35px; height: 35px; font-size: 0.9rem;">▶</button>
-                        <span id="current-time">0:00</span>
-                        <input type="range" id="seek-bar" value="0" max="100">
-                        <span id="duration">0:00</span>
-                    </div>
+            <!-- Contact Button -->
+            <div class="text-center reveal" style="margin-top: 4rem;">
+                <a href="index.html#contact" class="contact-btn" data-i18n="contact_btn">Contáctame</a>
+            </div>
+
+            <!-- Sticky Master Player Interface -->
+            <div class="audio-player-container master-player active">
+                <div class="master-track-info" id="master-track-title">Select a track...</div>
+                <div class="player-controls">
+                    <button id="prev-btn" class="control-btn">⏮</button>
+                    <button id="master-play-btn" class="play-btn"
+                        style="width: 40px; height: 40px; font-size: 1rem;">▶</button>
+                    <button id="next-btn" class="control-btn">⏭</button>
+                    <span id="current-time">0:00</span>
+                    <input type="range" id="seek-bar" value="0" max="100">
+                    <span id="duration">0:00</span>
                 </div>
             </div>
         </div>
@@ -242,10 +253,7 @@
 
     <footer>
         <div class="social-links">
-            <a href="https://www.tiktok.com/@nickost_music" target="_blank" class="social-link">TikTok:
-                @nickost_music</a>
-            <a href="https://www.tiktok.com/@secretosonoros" target="_blank" class="social-link">TikTok:
-                @secretosonoros</a>
+            <!-- Social links removed as per request -->
         </div>
         <p>&copy; 2025 NickOST. <span data-i18n="footer_rights">Todos los derechos reservados.</span></p>
     </footer>

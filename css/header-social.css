@@ -12,14 +12,77 @@
 
 .tiktok-icon {
     display: block;
-    width: 24px;
-    height: 24px;
-    background-color: var(--accent-gold);
-    -webkit-mask: url('../assets/tiktok.png') no-repeat center / contain;
-    mask: url('../assets/tiktok.png') no-repeat center / contain;
-    transition: background-color 0.3s;
+    width: 32px;
+    height: 32px;
+    background-image: url('../assets/tiktok-gold.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s opacity 0.3s;
+    mix-blend-mode: screen;
+    /* Removes black background */
 }
 
 .tiktok-icon:hover {
-    background-color: var(--text-primary);
+    transform: scale(1.1);
+    opacity: 0.9;
+    background-color: transparent;
+    /* Remove bg color on hover since we use image */
+}
+
+.soundcloud-icon {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url('../assets/soundcloud-gold.png');
+    background-size: cover;
+    /* Use cover if image has some padding, or contain */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s opacity 0.3s;
+    mix-blend-mode: screen;
+    /* Removes black background */
+}
+
+.soundcloud-icon:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+.youtube-icon {
+    display: block;
+    width: 32px;
+    /* Increased size */
+    height: 32px;
+    background-image: url('../assets/youtube-gold.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s opacity 0.3s;
+    mix-blend-mode: screen;
+    /* Removes black background */
+}
+
+.youtube-icon:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+.fiverr-icon {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url('../assets/fiverr-gold.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s opacity 0.3s;
+    mix-blend-mode: screen;
+    /* Removes black background */
+}
+
+.fiverr-icon:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
 }

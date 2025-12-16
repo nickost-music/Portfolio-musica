@@ -140,7 +140,10 @@
 
     .section {
         padding: 3rem 0;
+        padding-bottom: 8rem;
+        /* Extra space for sticky player on mobile */
     }
+
 
     /* Audio Player Mobile */
     .audio-player-container {
